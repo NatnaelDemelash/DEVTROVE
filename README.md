@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevTrove
 
-## Getting Started
+A web app for frontend developers to explore, save, and organize high-quality dev resources — videos, articles, tools, code snippets, and more. Features public browsing and personal saving with Supabase + Zustand + beautiful dynamic UI.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧠 Why?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Built to:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Learn **API integration**
+- Practice **Zustand** for state management
+- Use **Supabase** for lightweight backend (auth + database)
+- Protect pages with **authentication**
+- Build beautiful, interactive **dynamic UIs**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Core Features
 
-To learn more about Next.js, take a look at the following resources:
+### 📖 Public Explore Feed
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Fetch developer content from APIs (e.g., Dev.to)
+- Show as cards (title, type, tags, links, description)
+- Filter by type (video, blog, tool, tweet, etc.)
+- Search by keyword
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🔐 Auth (Supabase)
 
-## Deploy on Vercel
+- Sign in with GitHub (OAuth)
+- Protect personal pages (e.g., /library)
+- Optional: Guest mode for demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 💾 My Library
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Save/bookmark resources to your own profile
+- Add custom tags or notes
+- Filter + Search saved content
+
+### 🧠 Zustand State
+
+- UI theme (dark/light)
+- Modal, filters, and auth state
+
+### 🌍 Mobile Responsive UI
+
+- Fully mobile-ready experience
+- Smooth animations and transitions
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 15** (App Router)
+- **Tailwind CSS** + **Shadcn UI**
+- **TypeScript**
+- **Zustand** for global state
+- **Supabase** for Auth + DB
+- **Dev.to API** (for articles)
+- Optional: [GitHub API](https://docs.github.com/en/rest) or YouTube (if no auth required)
+
+---
+
+## 📅 Milestones
+
+- ✅ Phase 1: Project Setup + Public Explore Feed
+- 🔜 Phase 2: Auth + Save Functionality
+- 🔜 Phase 3: My Library Page
+- 🔜 Phase 4: Tags, Filtering, Animations, Polish
+
+---
+
+## 🧪 To Explore Later
+
+- Infinite scroll / pagination
+- Shareable saved items (public/private mode)
+- Export saved items as markdown or JSON
