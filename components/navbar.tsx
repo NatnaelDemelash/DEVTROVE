@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="w-full px-8 py-4 shadow-xs border-b">
       <div className="flex justify-between items-center max-w-6xl mx-auto">
-        <Link href="/" className="text-xl font-bold text-primary">
+        <Link href="/" className="text-xl text-primary font-bold">
           DevTrove
         </Link>
         <div className="space-x-6">

@@ -69,7 +69,7 @@ export default async function HomePage() {
         <p className="text-muted-foreground">
           Want to bookmark and organize your own reading list?
         </p>
-        <Button className="mt-2" asChild>
+        <Button className="mt-2 w-[30%] py-6 rounded-full" asChild>
           <Link href="/signin">Sign In</Link>
         </Button>
       </section>
