@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sparkles, BookmarkCheck, Filter } from "lucide-react";
 import ArticleCard from "@/components/article-card";
 import { DevToArticle } from "@/lib/types";
+import Signin from "@/components/signin";
 
 async function getFeaturedArticles(): Promise<DevToArticle[]> {
   const res = await fetch("https://dev.to/api/articles?per_page=3", {
@@ -28,6 +29,8 @@ export default async function HomePage() {
           <Link href="/explore">Start Exploring</Link>
         </Button>
       </section>
+
+      <Signin />
 
       {/* Features */}
       <section className="grid md:grid-cols-3 gap-6 text-center">
