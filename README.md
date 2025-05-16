@@ -59,8 +59,6 @@ Built to:
 - **Dev.to API** (for articles)
 - Optional: [GitHub API](https://docs.github.com/en/rest) or YouTube (if no auth required)
 
----
-
 ## 📅 Milestones
 
 - ✅ Phase 1: Project Setup + Public Explore Feed
